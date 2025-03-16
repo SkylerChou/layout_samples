@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 960px;
+        height: 800px;
+        border: 6px solid #f00;
+        display: flex;
+        /* 終點 */
+        /* justify-content: flex-end; */
+        /* 起點 */
+        /* justify-content: flex-start; */
+        /* 置中 */
+        /* justify-content: center; */
+        /* 前後空間分配 */
+        /* justify-content: space-around; */
+        /* 分配中間間隔的空間 */
+        justify-content: space-between;
+        /* 主軸的方向是左到右 */
+        flex-direction: row;
+        /* 主軸的方向是右到左 */
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        /* 針對整塊資料 => 所有的Item一起 */
+        align-content: center;
+        /* 每一個Item對齊的位置 */
+        /* align-items: flex-end; */
+        /* 延展Item等高 */
+        align-items: stretch;
+      }
+      .item {
+        width: 300px;
+        /* height: 100px; */
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      /* 抓取第一個字 */
+      .item:first-letter {
+        font-size: 40px;
+      }
+      .item1 {
+        background-color: #fa7;
+      }
+      .item2 {
+        background-color: #afa;
+        /* order預設值是0，大於零往尾端移動，小於零往起點移動，設一樣按照資料內容的順序 */
+        /* order: 1; */
+        /* align-self: flex-start; */
+      }
+      .item3 {
+        background-color: #aaf;
+      }
+      .item4 {
+        background-color: #faa;
+        order: -1;
+      }
+      .item5 {
+        background-color: #ffa;
+        order: -1;
+      }
+      .item6 {
+        background-color: #9ef;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- .item.item${$}*6 -->
+      <div class="item item1">
+        1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatibus reprehenderit accusantium
+        pariatur odit dignissimos sapiente inventore? Pariatur, quidem
+        temporibus ipsam dolorem vero aliquam, magnam omnis quasi reiciendis
+        veritatis dolores minima?
+      </div>
+      <div class="item item2">
+        2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?
+      </div>
+      <div class="item item3">
+        3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatibus reprehenderit accusantium
+        pariatur odit dignissimos sapiente inventore? Pariatur, quidem
+        temporibus ipsam dolorem vero aliquam, magnam omnis quasi reiciendis
+        veritatis dolores minima?
+      </div>
+      <div class="item item4">
+        4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?
+      </div>
+      <div class="item item5">
+        5 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatibus reprehenderit accusantium
+        pariatur odit dignissimos sapiente inventore? Pariatur, quidem
+        temporibus ipsam dolorem vero aliquam, magnam omnis quasi reiciendis
+        veritatis dolores minima?
+      </div>
+      <div class="item item6">
+        6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatibus reprehenderit accusantium
+        pariatur odit dignissimos sapiente inventore? Pariatur, quidem
+        temporibus ipsam dolorem vero aliquam, magnam omnis quasi reiciendis
+        veritatis dolores minima?
+      </div>
+    </div>
+  </body>
+</html>

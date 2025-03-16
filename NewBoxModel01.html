@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* box-sizing 盒模型的計算模式，設定寬度(width)值指定給誰 */
+      div {
+        width: 300px;
+        background-color: #fa0;
+        border: 10px solid #f00;
+        padding: 10px;
+        box-sizing: border-box;
+        /* 會指定給邊框到邊框的這個範圍，border、padding會往內推 */
+        /* box-sizing: content-box; */
+        /* 指定給內容物的寬度，border、padding會往外加 */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+      illo doloribus adipisci odit qui doloremque vel blanditiis? Eum molestias
+      vero ratione doloribus accusamus porro labore optio quaerat, ex
+      consequatur expedita!
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 1000px;
+        height: 800px;
+        border: 6px solid #f00;
+        display: flex;
+        justify-content: flex-start;
+        /* 主軸的方向是左到右 */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* 針對整塊資料 => 所有的Item一起 */
+        align-content: center;
+        /* 延展Item等高 */
+        align-items: center;
+      }
+      .item {
+        width: 500px;
+        /* 寬度會以flex-basis為主 */
+        height: 200px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      /* 抓取第一個字 */
+      .item:first-letter {
+        font-size: 40px;
+      }
+      .item1 {
+        background-color: #fa7;
+        /* 分配比例 */
+        /* flex-grow: 6; */
+        flex-shrink: 0;
+      }
+      .item2 {
+        background-color: #afa;
+        /* flex-grow: 3; */
+        flex-shrink: 1;
+      }
+      .item3 {
+        background-color: #aaf;
+        /* flex-grow: 3; */
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- .item.item${$}*6 -->
+      <div class="item item1">
+        1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+      </div>
+      <div class="item item2">
+        2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+        Pariatur, quidem temporibus ipsam dolorem vero aliquam, magnam omnis
+        quasi reiciendis veritatis dolores minima?
+      </div>
+      <div class="item item3">
+        3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        reprehenderit accusantium pariatur odit dignissimos sapiente inventore?
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* inline; //排在同一行，它像是線，它沒有寬度和高度，只有裡面字的長度
+         block //會佔據一整行，可以設定寬跟高，佔位哥
+         inline-block //會排在同一行，可以設定寬高*/
+      div {
+        display: inline;
+      }
+      h1 {
+        display: inline;
+      }
+      p {
+        display: inline;
+      }
+      a {
+        /* display: inline-block; */
+        background-color: bisque;
+        height: 100px;
+        width: 100px;
+        padding: 30px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>title</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+      temporibus reiciendis <a href="#">cupiditate</a> necessitatibus esse
+      officiis, voluptatum possimus dolor? <strong>Nostrum</strong>
+      <em>vel</em> <span>ratione possimus expedita eveniet</span> hic non fugit
+      inventore aliquid ad!
+    </p>
+    <!-- 
+    ul li 是什麼樣的特性?
+        ul跟li都偏向屬於block特性，
+    這是從影片中的二分法去評斷，
+    但我們嚴謹一點的去區分的話，
+    它其實還有一個特性是list-item跟list，
+    ul跟li其實就是list跟list-item這兩個特性，
+    但由於我們不常用到這兩個特性，
+    所以我才會先用inline跟block兩個特性來說明跟解釋。 -->
+    <ul>
+      <li>list</li>
+      <li>list</li>
+      <li>list</li>
+    </ul>
+
+    <ol>
+      <li>list</li>
+      <li>list</li>
+      <li>list</li>
+    </ol>
+
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ex
+      quisquam
+    </div>
+    dslkjfldskjfldsjfl
+  </body>
+</html>
